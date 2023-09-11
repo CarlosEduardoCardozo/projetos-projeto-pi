@@ -138,7 +138,6 @@ summary = "Provider of IANA time zone data"
 
 [metadata]
 lock_version = "4.2"
-cross_platform = true
 groups = ["default", "dev"]
 content_hash = "sha256:470f0aae7c62df4ba613d47c9ccf5c45371bc3a92681e1de4f2cd290520a7b5f"
 
