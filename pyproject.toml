@@ -12,6 +12,7 @@ dependencies = [
     "djangorestframework-simplejwt>=5.3.0",
     "setuptools>=68.2.0",
     "gunicorn>=21.2.0",
+    "whitenoise[brotli]>=6.5.0",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -20,3 +21,7 @@ license = {text = "MIT"}
 dev = [
     "black>=23.7.0",
 ]
+
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
