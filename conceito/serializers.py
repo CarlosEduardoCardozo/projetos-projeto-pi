@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from conceito.models import Camiseta, Marca, Bone 
+from conceito.models import Camiseta, Marca
 
 class CamisetaSerializer(ModelSerializer):
     class Meta:
@@ -12,7 +12,7 @@ class MarcaSerializer(ModelSerializer):
         model = Marca
         fields = "__all__"
 
-class BoneSerializer(ModelSerializer):
-    class Meta:
-        model = Bone
-        fields = "__all__"
+# class BoneSerializer(ModelSerializer):
+#     class Meta:
+#         model = Bone
+#         fields = "__all__"

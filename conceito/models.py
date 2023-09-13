@@ -18,15 +18,15 @@ class Camiseta(models.Model):
     def __str__(self):
         return self.nome
 
-class Bone(models.Model):
-    nome = models.CharField(max_length=20, null=True, blank=True)
-    descricao = models.CharField(max_length=100)
-    marca = models.ForeignKey(Marca, on_delete=models.PROTECT, related_name="bones")
-    cor = models.CharField(max_length=10)
-    valor = models.DecimalField(max_digits=10, decimal_places=2)  # Corrija a definição do campo Decimal
+# class Bone(models.Model):
+#     nome = models.CharField(max_length=20, null=True, blank=True)
+#     descricao = models.CharField(max_length=100)
+#     marca = models.ForeignKey(Marca, on_delete=models.PROTECT, related_name="bones")
+#     cor = models.CharField(max_length=10)
+#     valor = models.DecimalField(max_digits=10, decimal_places=2)  # Corrija a definição do campo Decimal
 
-    def __str__(self):
-        return f"{self.nome} ({self.cor})"
+#     def __str__(self):
+#         return f"{self.nome} ({self.cor})"
 
 class Compra(models.Model):
     class StatusCompra(models.IntegerChoices):
