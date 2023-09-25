@@ -1,4 +1,6 @@
 from django.db import models
+from uploader.models import Image
+
 
 # from usuario.models import Usuario  # Certifique-se de importar o modelo de usuário corretamente
 
@@ -14,6 +16,13 @@ class Camiseta(models.Model):
     marca = models.ForeignKey(Marca, on_delete=models.PROTECT, related_name="camisetas")
     tamanho = models.CharField(max_length=4)
     valor = models.DecimalField(max_digits=10, decimal_places=2)  # Corrija a definição do campo Decimal
+    capa = models.ForeignKey(
+        Image,
+        related_name="+",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        default=None,)
 
     def __str__(self):
         return self.nome
