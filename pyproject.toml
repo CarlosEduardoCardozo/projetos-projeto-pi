@@ -16,6 +16,7 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "python-magic>=0.4.27",
     "Pillow>=10.0.1",
+    "psycopg2-binary>=2.9.8",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -28,3 +29,7 @@ dev = [
 [[tool.pdm.autoexport]]
 filename = "requirements.txt"
 without-hashes = "true"
+
+[tool.pdm.scripts]
+pre_dev = "python ./scripts/set_my_ip.py"
+dev = "python manage.py runserver 0.0.0.0:19003"
