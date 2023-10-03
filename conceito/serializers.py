@@ -16,6 +16,8 @@ class CamisetaDetailSerializer(ModelSerializer):
 
 
 class CamisetaListSerializer(ModelSerializer):
+    
+    capa = ImageSerializer(required=False)
     class Meta:
         model = Camiseta
         fields = ["id", "nome", "valor", "capa"]
