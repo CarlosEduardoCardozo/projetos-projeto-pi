@@ -22,7 +22,7 @@ class Camiseta(models.Model):
         on_delete=models.CASCADE,
         null=True,
         blank=True,
-        default=None,)
+        default=None)
 
     def __str__(self):
         return self.nome
