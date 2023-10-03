@@ -18,7 +18,7 @@ class CamisetaDetailSerializer(ModelSerializer):
 class CamisetaListSerializer(ModelSerializer):
     class Meta:
         model = Camiseta
-        fields = ["id", "nome", "valor"]
+        fields = ["id", "nome", "valor", "capa"]
 
 class CamisetaSerializer(ModelSerializer):
     capa_attachment_key = SlugRelatedField(
