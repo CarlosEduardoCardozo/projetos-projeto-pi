@@ -6,7 +6,7 @@ groups = ["default", "dev"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:2ed1b79befbbeb76c453cf79512a04f50f5ec56d5f591b57f25640b63e8fdac1"
+content_hash = "sha256:d85fe9b453ac6e573956383035ac9104f7458424fc527e0422a0b5fc249e60a5"
 
 [[package]]
 name = "asgiref"
@@ -196,17 +196,17 @@ files = [
 
 [[package]]
 name = "django"
-version = "4.2.5"
-requires_python = ">=3.8"
+version = "5.0"
+requires_python = ">=3.10"
 summary = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 dependencies = [
-    "asgiref<4,>=3.6.0",
+    "asgiref>=3.7.0",
     "sqlparse>=0.3.1",
     "tzdata; sys_platform == \"win32\"",
 ]
 files = [
-    {file = "Django-4.2.5-py3-none-any.whl", hash = "sha256:b6b2b5cae821077f137dc4dade696a1c2aa292f892eca28fa8d7bfdf2608ddd4"},
-    {file = "Django-4.2.5.tar.gz", hash = "sha256:5e5c1c9548ffb7796b4a8a4782e9a2e5a3df3615259fc1bfd3ebc73b646146c1"},
+    {file = "Django-5.0-py3-none-any.whl", hash = "sha256:3a9fd52b8dbeae335ddf4a9dfa6c6a0853a1122f1fb071a8d5eca979f73a05c8"},
+    {file = "Django-5.0.tar.gz", hash = "sha256:7d29e14dfbc19cb6a95a4bd669edbde11f5d4c6a71fdaa42c2d40b6846e807f7"},
 ]
 
 [[package]]
@@ -548,25 +548,25 @@ files = [
 
 [[package]]
 name = "whitenoise"
-version = "6.5.0"
-requires_python = ">=3.7"
+version = "6.6.0"
+requires_python = ">=3.8"
 summary = "Radically simplified static file serving for WSGI applications"
 files = [
-    {file = "whitenoise-6.5.0-py3-none-any.whl", hash = "sha256:16468e9ad2189f09f4a8c635a9031cc9bb2cdbc8e5e53365407acf99f7ade9ec"},
-    {file = "whitenoise-6.5.0.tar.gz", hash = "sha256:15fe60546ac975b58e357ccaeb165a4ca2d0ab697e48450b8f0307ca368195a8"},
+    {file = "whitenoise-6.6.0-py3-none-any.whl", hash = "sha256:b1f9db9bf67dc183484d760b99f4080185633136a273a03f6436034a41064146"},
+    {file = "whitenoise-6.6.0.tar.gz", hash = "sha256:8998f7370973447fac1e8ef6e8ded2c5209a7b1f67c1012866dbcd09681c3251"},
 ]
 
 [[package]]
 name = "whitenoise"
-version = "6.5.0"
+version = "6.6.0"
 extras = ["brotli"]
-requires_python = ">=3.7"
+requires_python = ">=3.8"
 summary = "Radically simplified static file serving for WSGI applications"
 dependencies = [
     "Brotli",
-    "whitenoise==6.5.0",
+    "whitenoise==6.6.0",
 ]
 files = [
-    {file = "whitenoise-6.5.0-py3-none-any.whl", hash = "sha256:16468e9ad2189f09f4a8c635a9031cc9bb2cdbc8e5e53365407acf99f7ade9ec"},
-    {file = "whitenoise-6.5.0.tar.gz", hash = "sha256:15fe60546ac975b58e357ccaeb165a4ca2d0ab697e48450b8f0307ca368195a8"},
+    {file = "whitenoise-6.6.0-py3-none-any.whl", hash = "sha256:b1f9db9bf67dc183484d760b99f4080185633136a273a03f6436034a41064146"},
+    {file = "whitenoise-6.6.0.tar.gz", hash = "sha256:8998f7370973447fac1e8ef6e8ded2c5209a7b1f67c1012866dbcd09681c3251"},
 ]
